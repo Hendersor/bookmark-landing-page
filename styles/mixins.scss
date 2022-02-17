@@ -1,0 +1,40 @@
+@mixin center {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+@mixin specialButton {
+     background-color: $azul-principal;
+     color: white;
+     font-size: 1.5rem;
+     cursor: pointer;
+}
+
+@mixin paragraph {
+     font-family: 'Rubik', sans-serif;
+     font-weight: 400;
+     color: $gris;
+     text-align: center;
+     font-size: 1.6rem;
+     line-height: 25px;
+}
+
+@mixin normalButton {
+     height: 50px;
+     width: 150px;
+     margin-right: 15px;
+     border: none;
+     border-radius: 8px;
+     font-weight: bold;
+     font-size: 1.5rem; 
+     color: $gris;
+     cursor: pointer;
+}
+
+@mixin subTitle {
+     font-size: 2.5rem;
+     text-align: center;
+     font-family: 'Rubik', sans-serif;
+     font-weight: 500;  
+}

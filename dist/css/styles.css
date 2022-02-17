@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.navContainer {
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navContainer .logoContainer {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navContainer .iconMenuContainer {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.navContainer .iconMenuContainer img {
+  cursor: pointer;
+}
+
+.mainContainer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.mainContainer .imageContainer {
+  width: 100%;
+  height: 50%;
+  border: 1px solid;
+  position: relative;
+}
+
+.mainContainer .imageContainer img {
+  width: 350px;
+  height: 300px;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.mainContainer .imageContainer .figure {
+  height: 230px;
+  width: 300px;
+  position: absolute;
+  background-color: #5368df;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+.mainContainer .informationContainer {
+  width: 100%;
+  height: 50%;
+  border: 1px solid;
+}
+
+.mainContainer .informationContainer .info {
+  border: 1px solid;
+  height: 70%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainContainer .informationContainer .info h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 3.0rem;
+}
+
+.mainContainer .informationContainer .info p {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  color: #9194a1;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 25px;
+  padding: 0 20px;
+}
+
+.mainContainer .informationContainer .buttonsContainer {
+  width: 100%;
+  height: 30%;
+  border: 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainContainer .informationContainer .buttonsContainer button {
+  height: 50px;
+  width: 150px;
+  margin-right: 15px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #9194a1;
+  cursor: pointer;
+}
+
+.mainContainer .informationContainer .buttonsContainer .specialButton {
+  background-color: #5368df;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.features {
+  width: 100%;
+  height: 120vh;
+  border: 1px solid;
+}
+
+.features .featuresInfoContainer {
+  width: 100%;
+  height: 50%;
+  border: 1px solid;
+}
+
+.features .featuresInfoContainer .featuresInfo {
+  width: 100%;
+  height: 50%;
+  border: 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.features .featuresInfoContainer .featuresInfo h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+
+.features .featuresInfoContainer .featuresInfo p {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  color: #9194a1;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 25px;
+  padding: 0 20px;
+}
+
+.features .featuresInfoContainer .featuresList {
+  width: 100%;
+  height: 50%;
+  border: 1px solid;
+}
+/*# sourceMappingURL=styles.css.map */
