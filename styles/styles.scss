@@ -119,12 +119,10 @@
      .featuresInfoContainer{
           width: 100%;
           height: 50%;
-          border: 1px solid;
 
           .featuresInfo{
                width: 100%;
                height: 50%;
-               border: 1px solid;
                @include center;
                justify-content: space-evenly;
                flex-direction: column;
@@ -143,7 +141,37 @@
           .featuresList{
                width: 100%;
                height: 50%;
-               border: 1px solid;
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+
+               .num1{
+                    border-bottom: 1px solid #cccccc;
+                    border-top:1px solid #cccccc;
+               }
+
+               .num2{
+                    border-bottom: 1px solid #cccccc;
+               }
+
+               .num3{
+                    border-bottom: 1px solid #cccccc;
+               }
+
+               .featureContainer{
+                    width: 83%;
+                    height: 70px;
+                    text-align: center;
+                    @include center;
+
+                    h2{
+                         font-size: 1.9rem;
+                         font-family: 'Rubik', sans-serif;
+                         font-weight: 400;
+                         cursor: pointer;
+                    }
+               }
           }
      }
 }

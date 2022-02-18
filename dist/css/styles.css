@@ -174,13 +174,11 @@ html {
 .features .featuresInfoContainer {
   width: 100%;
   height: 50%;
-  border: 1px solid;
 }
 
 .features .featuresInfoContainer .featuresInfo {
   width: 100%;
   height: 50%;
-  border: 1px solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,6 +217,53 @@ html {
 .features .featuresInfoContainer .featuresList {
   width: 100%;
   height: 50%;
-  border: 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.features .featuresInfoContainer .featuresList .num1 {
+  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+}
+
+.features .featuresInfoContainer .featuresList .num2 {
+  border-bottom: 1px solid #cccccc;
+}
+
+.features .featuresInfoContainer .featuresList .num3 {
+  border-bottom: 1px solid #cccccc;
+}
+
+.features .featuresInfoContainer .featuresList .featureContainer {
+  width: 83%;
+  height: 70px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features .featuresInfoContainer .featuresList .featureContainer h2 {
+  font-size: 1.9rem;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
