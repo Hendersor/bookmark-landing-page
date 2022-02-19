@@ -506,4 +506,111 @@ html {
   color: white;
   margin: 0 auto;
 }
+
+.faq {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.faq .information {
+  width: 100%;
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.faq .information h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  padding: 0 20px;
+}
+
+.faq .information p {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  color: #9194a1;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 25px;
+  padding: 0 20px;
+}
+
+.faq .questions {
+  width: 85%;
+  height: 50%;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.faq .questions li {
+  height: 70px;
+  border-bottom: 1px solid #e7e7e9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faq .questions li p {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.faq .questions li img {
+  width: 19px;
+  height: 13px;
+  cursor: pointer;
+}
+
+.faq button {
+  height: 50px;
+  width: 150px;
+  margin-right: 15px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #9194a1;
+  cursor: pointer;
+  background-color: #5368df;
+  color: white;
+  width: 120px;
+  border-radius: 5px;
+}
 /*# sourceMappingURL=styles.css.map */
