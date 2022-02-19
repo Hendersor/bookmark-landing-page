@@ -38,3 +38,10 @@
      font-family: 'Rubik', sans-serif;
      font-weight: 500;  
 }
+
+@mixin figure{
+     height: 300px;
+     width: 300px;
+     position: absolute;
+     background-color: $azul-principal;
+}
