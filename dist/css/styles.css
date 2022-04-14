@@ -15,6 +15,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .navContainer .logoContainer {
@@ -53,6 +54,92 @@ html {
   cursor: pointer;
 }
 
+.navContainer .mobileMenu {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(37, 43, 70, 0.9);
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 30px;
+  font-family: "Rubik", sans-serif;
+}
+
+.navContainer .mobileMenu .menu :nth-child(1) {
+  border-top: 1px solid #818181;
+}
+
+.navContainer .mobileMenu .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200px;
+  width: 100%;
+  align-items: center;
+}
+
+.navContainer .mobileMenu .menu li {
+  padding-top: 18px;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  font-size: 1.5rem;
+  opacity: 1;
+  border-bottom: 1px solid #818181;
+  height: 80px;
+  font-size: 2.3rem;
+  color: #e7e7e9;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.navContainer .mobileMenu .loginButton {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #e7e7e9;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navContainer .mobileMenu .socialMedia {
+  width: 100%;
+  height: 100px;
+}
+
+.navContainer .mobileMenu .socialMedia img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid yellow;
+}
+
 .mainContainer {
   width: 100%;
   height: 100vh;
@@ -69,7 +156,6 @@ html {
   width: 380px;
   height: 280px;
   position: absolute;
-  z-index: 2;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -116,7 +202,7 @@ html {
   text-align: center;
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
-  font-size: 3.0rem;
+  font-size: 3rem;
 }
 
 .mainContainer .informationContainer .info p {
@@ -258,7 +344,7 @@ html {
 
 .features .featuresInfoContainer .featuresList .featureContainer h2 {
   font-size: 1.9rem;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   cursor: pointer;
 }
@@ -473,7 +559,7 @@ html {
   text-align: center;
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
-  font-size: 2.0rem;
+  font-size: 2rem;
 }
 
 .extension .downloadExtensions .chrome .browser p {
