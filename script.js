@@ -2,8 +2,7 @@ const iconMenu = document.getElementById("iconMenu");
 const menu = document.getElementById("menuContainer");
 const closeIcon = document.getElementById("closeMenu");
 const featuresContainer = document.getElementById("featuresContainer");
-const allFeaturesImg = document.querySelectorAll(".featureImage");
-const allFeaturesInfo = document.querySelectorAll(".featureInfo");
+const allFeatures = document.querySelectorAll(".mainFeatureContainer");
 
 function noScroll() {
   window.scrollTo(0.0);
@@ -32,20 +31,15 @@ iconMenu.addEventListener("click", deployMenu);
 closeIcon.addEventListener("click", closeMenu);
 menu.addEventListener("wheel", preventScroll, { passive: false });
 
-// const deployFeatures = (e) => {
-//   const id = e.target.id;
-//   if (id) {
-//     allFeaturesImg.forEach((img) => {
-//       img.classList.add("off");
-//     });
+const deployFeature = (e) => {
+  const id = e.target.dataset.id;
+  if (id) {
+    allFeatures.forEach((feature) => {
+      feature.classList.add("off");
+    });
+    const element = document.getElementById(id);
+    element.classList.remove("off");
+  }
+};
 
-//     allFeaturesInfo.forEach((info) => {
-//       info.classList.add("off");
-//     });
-
-//     const infoImage = document.getElementById(id);
-//     console.log(infoImage.classList);
-//     infoImage.classList.remove("off");
-//   }
-// };
-// featuresContainer.addEventListener("click", deployFeatures);
+featuresContainer.addEventListener("click", deployFeature);
