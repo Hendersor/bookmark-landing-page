@@ -3,7 +3,8 @@ const menu = document.getElementById("menuContainer");
 const closeIcon = document.getElementById("closeMenu");
 const featuresContainer = document.getElementById("featuresContainer");
 const allFeatures = document.querySelectorAll(".mainFeatureContainer");
-
+const allQuestions = document.getElementById("allQuestions");
+const answer = document.querySelectorAll(".answer");
 function noScroll() {
   window.scrollTo(0.0);
 }
@@ -43,3 +44,15 @@ const deployFeature = (e) => {
 };
 
 featuresContainer.addEventListener("click", deployFeature);
+
+const deployAnswer = (e) => {
+  const id = e.target.dataset.id;
+  if (id) {
+    answer.forEach((ans) => {
+      ans.classList.add("off");
+    });
+    const deploy = document.getElementById(id);
+    deploy.classList.remove("off");
+  }
+};
+allQuestions.addEventListener("click", deployAnswer);

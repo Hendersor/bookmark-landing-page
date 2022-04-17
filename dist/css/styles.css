@@ -673,7 +673,16 @@ html {
   list-style: none;
 }
 
-.faq .questions li {
+.faq .questions .answer {
+  font-size: 1.5rem;
+}
+
+.faq .questions .off {
+  display: none;
+}
+
+.faq .questions .question {
+  width: 100%;
   height: 70px;
   border-bottom: 1px solid #e7e7e9;
   display: -webkit-box;
@@ -687,7 +696,7 @@ html {
           align-items: center;
 }
 
-.faq .questions li p {
+.faq .questions .question p {
   font-size: 2.5rem;
   text-align: center;
   font-family: 'Rubik', sans-serif;
@@ -697,7 +706,7 @@ html {
   text-align: center;
 }
 
-.faq .questions li img {
+.faq .questions .question img {
   width: 19px;
   height: 13px;
   cursor: pointer;
@@ -717,6 +726,7 @@ html {
   color: white;
   width: 120px;
   border-radius: 5px;
+  margin-top: 50px;
 }
 
 .form {

@@ -399,7 +399,14 @@
     height: 50%;
     margin: 0 auto;
     list-style: none;
-    li {
+    .answer {
+      font-size: 1.5rem;
+    }
+    .off {
+      display: none;
+    }
+    .question {
+      width: 100%;
       height: 70px;
       border-bottom: 1px solid hsl(240, 5%, 91%);
       display: flex;
@@ -425,6 +432,7 @@
     color: white;
     width: 120px;
     border-radius: 5px;
+    margin-top: 50px;
   }
 }
 
