@@ -1,5 +1,6 @@
 @import "./global.scss";
 @import "./mixins.scss";
+@import "./desktop.scss";
 
 .navContainer {
   height: 100px;
@@ -36,6 +37,10 @@
 
   .off {
     visibility: hidden;
+  }
+
+  .desktopMenu {
+    display: none;
   }
 
   .mobileMenu {
@@ -401,6 +406,7 @@
     list-style: none;
     .answer {
       font-size: 1.5rem;
+      font-family: "Rubik", sans-serif;
     }
     .off {
       display: none;

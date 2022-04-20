@@ -1,7 +1,6 @@
 * {
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
 }
 
@@ -9,106 +8,75 @@ html {
   font-size: 62.5%;
 }
 
+.navContainer .iconMenuContainer {
+  display: none;
+}
+.navContainer .desktopMenu {
+  display: flex;
+}
+
 .navContainer {
   height: 100px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
-
 .navContainer .logoContainer {
   width: 50%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .navContainer .iconMenuContainer {
   width: 50%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
   padding: 20px;
 }
-
 .navContainer .iconMenuContainer img {
   cursor: pointer;
 }
-
 .navContainer .on {
   visibility: visible;
   overflow-y: hidden;
 }
-
 .navContainer .off {
   visibility: hidden;
 }
-
+.navContainer .desktopMenu {
+  display: none;
+}
 .navContainer .mobileMenu {
   position: absolute;
   width: 100%;
   height: 100vh;
   background-color: rgba(37, 43, 70, 0.9);
   z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   padding: 30px;
   font-family: "Rubik", sans-serif;
 }
-
 .navContainer .mobileMenu .menu :nth-child(1) {
   border-top: 1px solid #818181;
 }
-
 .navContainer .mobileMenu .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   height: 200px;
   width: 100%;
   align-items: center;
 }
-
 .navContainer .mobileMenu .menu li {
   padding-top: 18px;
   width: 100%;
@@ -123,7 +91,6 @@ html {
   cursor: pointer;
   letter-spacing: 2px;
 }
-
 .navContainer .mobileMenu .loginButton {
   width: 100%;
   height: 50px;
@@ -137,12 +104,10 @@ html {
   font-weight: bold;
   cursor: pointer;
 }
-
 .navContainer .socialMedia {
   width: 100%;
   height: 100px;
 }
-
 .navContainer .socialMedia img {
   width: 50px;
   height: 50px;
@@ -154,90 +119,65 @@ html {
   height: 100vh;
   position: relative;
 }
-
 .mainContainer .imageContainer {
   width: 100%;
   height: 50%;
   position: relative;
 }
-
 .mainContainer .imageContainer img {
   width: 380px;
   height: 280px;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
 .mainContainer .imageContainer .figure {
   height: 300px;
   width: 300px;
   position: absolute;
-  background-color: #5368df;
+  background-color: hsl(231deg, 69%, 60%);
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
   bottom: 0;
   right: 0;
   height: 200px;
 }
-
 .mainContainer .informationContainer {
   width: 100%;
   height: 50%;
 }
-
 .mainContainer .informationContainer .info {
   height: 70%;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
-
 .mainContainer .informationContainer .info h1 {
   font-size: 2.5rem;
   text-align: center;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 3rem;
 }
-
 .mainContainer .informationContainer .info p {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
-  color: #9194a1;
+  color: hsl(229deg, 8%, 60%);
   text-align: center;
   font-size: 1.6rem;
   line-height: 25px;
   padding: 0 20px;
 }
-
 .mainContainer .informationContainer .buttonsContainer {
   width: 100%;
   height: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .mainContainer .informationContainer .buttonsContainer button {
   height: 50px;
   width: 150px;
@@ -246,12 +186,11 @@ html {
   border-radius: 8px;
   font-weight: bold;
   font-size: 1.5rem;
-  color: #9194a1;
+  color: hsl(229deg, 8%, 60%);
   cursor: pointer;
 }
-
 .mainContainer .informationContainer .buttonsContainer .specialButton {
-  background-color: #5368df;
+  background-color: hsl(231deg, 69%, 60%);
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
@@ -261,145 +200,95 @@ html {
   width: 100%;
   height: 160vh;
 }
-
 .features .featuresInfoContainer {
   width: 100%;
   height: 50%;
 }
-
 .features .featuresInfoContainer .featuresInfo {
   width: 100%;
   height: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
-
 .features .featuresInfoContainer .featuresInfo h1 {
   font-size: 2.5rem;
   text-align: center;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 500;
 }
-
 .features .featuresInfoContainer .featuresInfo p {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
-  color: #9194a1;
+  color: hsl(229deg, 8%, 60%);
   text-align: center;
   font-size: 1.6rem;
   line-height: 25px;
   padding: 0 20px;
 }
-
 .features .featuresInfoContainer .featuresList {
   width: 100%;
   height: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 .features .featuresInfoContainer .featuresList .num1 {
   border-bottom: 1px solid #cccccc;
   border-top: 1px solid #cccccc;
 }
-
 .features .featuresInfoContainer .featuresList .num2 {
   border-bottom: 1px solid #cccccc;
 }
-
 .features .featuresInfoContainer .featuresList .num3 {
   border-bottom: 1px solid #cccccc;
 }
-
 .features .featuresInfoContainer .featuresList .featureContainer {
   width: 83%;
   height: 70px;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .features .featuresInfoContainer .featuresList .featureContainer h2 {
   font-size: 1.9rem;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   cursor: pointer;
 }
-
 .features .displayFeature {
   width: 100%;
   height: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
-
 .features .displayFeature .mainFeatureContainer {
   width: 100%;
   height: 100%;
 }
-
 .features .displayFeature .featureImage {
   width: 100%;
   height: 60%;
   position: relative;
 }
-
 .features .displayFeature .featureImage .figure {
   height: 300px;
   width: 300px;
   position: absolute;
-  background-color: #5368df;
-  bottom: -0;
-  left: -0;
+  background-color: hsl(231deg, 69%, 60%);
+  bottom: 0;
+  left: 0;
   position: absolute;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
   height: 200px;
 }
-
 .features .displayFeature .featureImage img {
   width: 325px;
   height: 225px;
@@ -407,46 +296,32 @@ html {
   z-index: 2;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
 .features .displayFeature .featureInfo {
   height: 40%;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
 .features .displayFeature .featureInfo h1 {
   font-size: 2.5rem;
   text-align: center;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 500;
   margin-bottom: 20px;
 }
-
 .features .displayFeature .featureInfo p {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
-  color: #9194a1;
+  color: hsl(229deg, 8%, 60%);
   text-align: center;
   font-size: 1.6rem;
   line-height: 25px;
   padding: 0 20px;
 }
-
 .features .displayFeature .off {
   display: none;
 }
@@ -454,148 +329,86 @@ html {
 .extension {
   width: 100%;
   height: 205vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   margin-top: 100px;
 }
-
 .extension .information {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
   width: 100%;
   height: 10%;
 }
-
 .extension .information h1 {
   font-size: 2.5rem;
   text-align: center;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 500;
 }
-
 .extension .information p {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
-  color: #9194a1;
+  color: hsl(229deg, 8%, 60%);
   text-align: center;
   font-size: 1.6rem;
   line-height: 25px;
   padding: 0 20px;
 }
-
 .extension .downloadExtensions {
   width: 100%;
   height: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   margin-top: 30px;
 }
-
 .extension .downloadExtensions .chrome {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   width: 80%;
   height: 350px;
   border-radius: 15px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin-bottom: 50px;
 }
-
 .extension .downloadExtensions .chrome .browser {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
   width: 100%;
   height: 60%;
 }
-
 .extension .downloadExtensions .chrome .browser h1 {
   font-size: 2.5rem;
   text-align: center;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 2rem;
 }
-
 .extension .downloadExtensions .chrome .browser p {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
-  color: #9194a1;
+  color: hsl(229deg, 8%, 60%);
   text-align: center;
   font-size: 1.6rem;
   line-height: 25px;
   font-size: 1.5rem;
 }
-
 .extension .downloadExtensions .chrome figure {
   width: 100%;
   height: 5%;
 }
-
 .extension .downloadExtensions .chrome button {
   height: 50px;
   width: 150px;
@@ -604,10 +417,10 @@ html {
   border-radius: 8px;
   font-weight: bold;
   font-size: 1.5rem;
-  color: #9194a1;
+  color: hsl(229deg, 8%, 60%);
   cursor: pointer;
   width: 80%;
-  background-color: #5368df;
+  background-color: hsl(231deg, 69%, 60%);
   color: white;
   margin: 0 auto;
 }
@@ -615,103 +428,70 @@ html {
 .faq {
   width: 100%;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
 .faq .information {
   width: 100%;
   height: 25%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
-
 .faq .information h1 {
   font-size: 2.5rem;
   text-align: center;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 500;
   padding: 0 20px;
 }
-
 .faq .information p {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
-  color: #9194a1;
+  color: hsl(229deg, 8%, 60%);
   text-align: center;
   font-size: 1.6rem;
   line-height: 25px;
   padding: 0 20px;
 }
-
 .faq .questions {
   width: 85%;
   height: 50%;
   margin: 0 auto;
   list-style: none;
 }
-
 .faq .questions .answer {
   font-size: 1.5rem;
+  font-family: "Rubik", sans-serif;
 }
-
 .faq .questions .off {
   display: none;
 }
-
 .faq .questions .question {
   width: 100%;
   height: 70px;
-  border-bottom: 1px solid #e7e7e9;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  border-bottom: 1px solid hsl(240deg, 5%, 91%);
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .faq .questions .question p {
   font-size: 2.5rem;
   text-align: center;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 1.6rem;
   font-weight: 400;
   text-align: center;
 }
-
 .faq .questions .question img {
   width: 19px;
   height: 13px;
   cursor: pointer;
 }
-
 .faq button {
   height: 50px;
   width: 150px;
@@ -720,9 +500,9 @@ html {
   border-radius: 8px;
   font-weight: bold;
   font-size: 1.5rem;
-  color: #9194a1;
+  color: hsl(229deg, 8%, 60%);
   cursor: pointer;
-  background-color: #5368df;
+  background-color: hsl(231deg, 69%, 60%);
   color: white;
   width: 120px;
   border-radius: 5px;
@@ -732,44 +512,24 @@ html {
 .form {
   width: 100%;
   height: 50vh;
-  background-color: #5368df;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: hsl(231deg, 69%, 60%);
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
 .form .titles {
   width: 100%;
   height: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
 .form .titles p {
   font-size: 2.5rem;
   text-align: center;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-weight: 400;
   font-size: 1.5rem;
@@ -777,33 +537,21 @@ html {
   letter-spacing: 4px;
   margin-bottom: 10px;
 }
-
 .form .titles h1 {
   font-size: 2.5rem;
   text-align: center;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 500;
   color: white;
 }
-
 .form .input {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   height: 50%;
 }
-
 .form .input input {
   width: 85%;
   height: 50px;
@@ -811,36 +559,26 @@ html {
   border: none;
   border-radius: 5px;
 }
-
-.form .input input::-webkit-input-placeholder {
+.form .input input::-moz-placeholder {
   padding-left: 25px;
   font-size: 1.6rem;
   color: gray;
 }
-
 .form .input input:-ms-input-placeholder {
   padding-left: 25px;
   font-size: 1.6rem;
   color: gray;
 }
-
-.form .input input::-ms-input-placeholder {
-  padding-left: 25px;
-  font-size: 1.6rem;
-  color: gray;
-}
-
 .form .input input::placeholder {
   padding-left: 25px;
   font-size: 1.6rem;
   color: gray;
 }
-
 .form .input button {
   width: 85%;
   height: 50px;
   border: none;
-  background-color: #fa5757;
+  background-color: hsl(0deg, 94%, 66%);
   color: white;
   border-radius: 5px;
   font-size: 1.5rem;
@@ -850,66 +588,38 @@ html {
 footer {
   width: 100%;
   height: 50vh;
-  background-color: #252b46;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: hsl(229deg, 31%, 21%);
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 footer .footerContent {
   width: 100%;
   height: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   list-style: none;
 }
-
 footer .footerContent p {
   cursor: pointer;
   font-size: 2.5rem;
   text-align: center;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-weight: 400;
   color: white;
   font-size: 1.8rem;
 }
-
 footer .socialMedia {
   height: 30%;
   width: 35%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
-
 footer .socialMedia img {
   cursor: pointer;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
