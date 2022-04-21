@@ -146,4 +146,41 @@ html {
 .features .mainFeatureContainer .featureInfo p {
   font-size: 2rem;
   text-align: left;
+}
+
+.extension {
+  height: 700px;
+  width: 100%;
+}
+.extension .information {
+  height: 150px;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.extension .information h1 {
+  font-size: 3.5rem;
+}
+.extension .information p {
+  margin-top: 10px;
+  font-size: 2rem;
+  text-align: center;
+}
+.extension .downloadExtensions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.extension .downloadExtensions .one {
+  margin-top: 15px;
+}
+.extension .downloadExtensions .two {
+  margin-top: 85px;
+}
+.extension .downloadExtensions .three {
+  margin-top: 150px;
+}
+.extension .downloadExtensions .chrome {
+  width: 290px;
 }/*# sourceMappingURL=desktop.css.map */

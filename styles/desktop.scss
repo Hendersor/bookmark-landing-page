@@ -161,3 +161,46 @@
     }
   }
 }
+
+.extension {
+  height: 700px;
+  width: 100%;
+
+  .information {
+    height: 150px;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+
+  .downloadExtensions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .one {
+      margin-top: 15px;
+    }
+
+    .two {
+      margin-top: 85px;
+    }
+
+    .three {
+      margin-top: 150px;
+    }
+
+    .chrome {
+      width: 290px;
+    }
+  }
+}
