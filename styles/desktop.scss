@@ -233,3 +233,51 @@
     width: 70%;
   }
 }
+
+.form {
+  height: 40vh;
+
+  .titles {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    h1 {
+      font-size: 3rem;
+    }
+    padding: 0 280px;
+  }
+
+  .input {
+    flex-direction: row;
+    input {
+      width: 400px;
+      margin: 0 10px;
+    }
+    button {
+      width: 120px;
+    }
+  }
+}
+
+footer {
+  padding: 0 100px;
+  height: 15vh;
+  flex-direction: row;
+  justify-content: space-between;
+  .footerContent {
+    width: 50%;
+    flex-direction: row;
+
+    p {
+      cursor: pointer;
+      font-weight: 300;
+    }
+  }
+
+  .socialMedia {
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+  }
+}

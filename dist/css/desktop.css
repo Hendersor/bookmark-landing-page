@@ -204,4 +204,48 @@ html {
 .faq .questions li .answer {
   font-size: 1.6rem;
   color: hsl(229deg, 8%, 60%);
+}
+
+.form {
+  height: 40vh;
+}
+.form .titles {
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 0 280px;
+}
+.form .titles h1 {
+  font-size: 3rem;
+}
+.form .input {
+  flex-direction: row;
+}
+.form .input input {
+  width: 400px;
+  margin: 0 10px;
+}
+.form .input button {
+  width: 120px;
+}
+
+footer {
+  padding: 0 100px;
+  height: 15vh;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .footerContent {
+  width: 50%;
+  flex-direction: row;
+}
+footer .footerContent p {
+  cursor: pointer;
+  font-weight: 300;
+}
+footer .socialMedia {
+  display: flex;
+  justify-content: space-between;
+  width: 110px;
 }/*# sourceMappingURL=desktop.css.map */
