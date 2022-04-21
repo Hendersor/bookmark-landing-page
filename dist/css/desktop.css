@@ -183,4 +183,25 @@ html {
 }
 .extension .downloadExtensions .chrome {
   width: 290px;
+}
+
+.faq .information {
+  padding: 0 200px;
+}
+.faq .information h1 {
+  font-size: 3.5rem;
+}
+.faq .information p {
+  font-size: 2rem;
+  text-align: center;
+}
+.faq .questions {
+  width: 70%;
+}
+.faq .questions li .question p {
+  font-size: 2.1rem;
+}
+.faq .questions li .answer {
+  font-size: 1.6rem;
+  color: hsl(229deg, 8%, 60%);
 }/*# sourceMappingURL=desktop.css.map */
