@@ -8,11 +8,259 @@ html {
   font-size: 62.5%;
 }
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 .navContainer .iconMenuContainer {
   display: none;
 }
 .navContainer .desktopMenu {
   display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.navContainer .desktopMenu ul {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  list-style: none;
+  font-family: "Rubik", sans-serif;
+  justify-content: space-evenly;
+  font-weight: 300;
+  cursor: pointer;
+}
+.navContainer .desktopMenu ul li:hover {
+  color: hsl(0deg, 94%, 66%);
+}
+.navContainer .desktopMenu ul button {
+  border: none;
+  width: 135px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: hsl(0deg, 94%, 66%);
+  font-size: 1.8rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.navContainer .desktopMenu .iconMenuContainer img {
+  width: 200px;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 70vh;
+  width: 100%;
+}
+.mainContainer .informationContainer {
+  height: 100%;
+  width: 110%;
+}
+.mainContainer .informationContainer .info {
+  align-items: center;
+}
+.mainContainer .informationContainer .info h1 {
+  font-size: 5.5rem;
+  text-align: left;
+  margin-left: 20px;
+}
+.mainContainer .informationContainer .info p {
+  font-size: 2.5rem;
+  text-align: left;
+  line-height: 38px;
+}
+.mainContainer .informationContainer .buttonsContainer {
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+.mainContainer .informationContainer .buttonsContainer .buttons {
+  width: 190px;
+  height: 60px;
+  align-content: flex-start;
+  font-size: 1.8rem;
+}
+.mainContainer .imageContainer {
+  width: 100%;
+  height: 100%;
+}
+.mainContainer .imageContainer .figure {
+  height: 350px;
+}
+.mainContainer .imageContainer img {
+  width: 500px;
+  height: 450px;
+}
+
+.features {
+  height: 110vh;
+}
+.features .featuresInfoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: end;
+}
+.features .featuresInfoContainer .featuresInfo {
+  margin: 0 auto;
+  width: 70%;
+}
+.features .featuresInfoContainer .featuresInfo h1 {
+  font-size: 3.8rem;
+}
+.features .featuresInfoContainer .featuresInfo p {
+  font-size: 2.3rem;
+  text-align: center;
+  padding: 0 50px;
+  line-height: 33px;
+}
+.features .featuresInfoContainer .featuresList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+}
+.features .featuresInfoContainer .featuresList .num1 {
+  border-top: none;
+}
+.features .mainFeatureContainer {
+  display: flex;
+  width: 100%;
+}
+.features .mainFeatureContainer .featureImage {
+  width: 50%;
+  height: 100%;
+}
+.features .mainFeatureContainer .featureImage .figure {
+  height: 300px;
+  width: 400px;
+}
+.features .mainFeatureContainer .featureImage img {
+  width: 400px;
+  height: 300px;
+}
+.features .mainFeatureContainer .featureInfo {
+  width: 50%;
+  height: 100%;
+}
+.features .mainFeatureContainer .featureInfo h1 {
+  font-size: 3.5rem;
+  text-align: left;
+}
+.features .mainFeatureContainer .featureInfo p {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.extension {
+  height: 700px;
+  width: 100%;
+}
+.extension .information {
+  height: 150px;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.extension .information h1 {
+  font-size: 3.5rem;
+}
+.extension .information p {
+  margin-top: 10px;
+  font-size: 2rem;
+  text-align: center;
+}
+.extension .downloadExtensions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.extension .downloadExtensions .one {
+  margin-top: 15px;
+}
+.extension .downloadExtensions .two {
+  margin-top: 85px;
+}
+.extension .downloadExtensions .three {
+  margin-top: 150px;
+}
+.extension .downloadExtensions .chrome {
+  width: 290px;
+}
+
+.faq .information {
+  padding: 0 200px;
+}
+.faq .information h1 {
+  font-size: 3.5rem;
+}
+.faq .information p {
+  font-size: 2rem;
+  text-align: center;
+}
+.faq .questions {
+  width: 70%;
+}
+.faq .questions li .question p {
+  font-size: 2.1rem;
+}
+.faq .questions li .answer {
+  font-size: 1.6rem;
+  color: hsl(229deg, 8%, 60%);
+}
+
+.form {
+  height: 40vh;
+}
+.form .titles {
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 0 280px;
+}
+.form .titles h1 {
+  font-size: 3rem;
+}
+.form .input {
+  flex-direction: row;
+}
+.form .input input {
+  width: 400px;
+  margin: 0 10px;
+}
+.form .input button {
+  width: 120px;
+}
+
+footer {
+  padding: 0 100px;
+  height: 15vh;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .footerContent {
+  width: 50%;
+  flex-direction: row;
+}
+footer .footerContent p {
+  cursor: pointer;
+  font-weight: 300;
+}
+footer .socialMedia {
+  display: flex;
+  justify-content: space-between;
+  width: 110px;
 }
 
 .navContainer {
@@ -118,6 +366,8 @@ html {
   width: 100%;
   height: 100vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .mainContainer .imageContainer {
   width: 100%;
@@ -188,12 +438,22 @@ html {
   font-size: 1.5rem;
   color: hsl(229deg, 8%, 60%);
   cursor: pointer;
+  width: 130px;
+  height: 50px;
+}
+.mainContainer .informationContainer .buttonsContainer .buttons {
+  width: 130px;
+  height: 50px;
+  font-size: 1.3rem;
 }
 .mainContainer .informationContainer .buttonsContainer .specialButton {
   background-color: hsl(231deg, 69%, 60%);
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
+  width: 130px;
+  height: 50px;
+  font-size: 1.3rem;
 }
 
 .features {
@@ -269,6 +529,8 @@ html {
   justify-content: space-evenly;
 }
 .features .displayFeature .mainFeatureContainer {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
 }
@@ -328,7 +590,7 @@ html {
 
 .extension {
   width: 100%;
-  height: 205vh;
+  height: 230vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -343,6 +605,7 @@ html {
   flex-direction: column;
   width: 100%;
   height: 10%;
+  padding: 0;
 }
 .extension .information h1 {
   font-size: 2.5rem;
@@ -357,14 +620,14 @@ html {
   text-align: center;
   font-size: 1.6rem;
   line-height: 25px;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 .extension .downloadExtensions {
   width: 100%;
   height: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
   margin-top: 30px;
 }
@@ -373,12 +636,12 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 80%;
   height: 350px;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin-bottom: 50px;
+  margin-top: 0;
 }
 .extension .downloadExtensions .chrome .browser {
   display: flex;
@@ -440,6 +703,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  padding: 0;
 }
 .faq .information h1 {
   font-size: 2.5rem;
@@ -455,7 +719,6 @@ html {
   text-align: center;
   font-size: 1.6rem;
   line-height: 25px;
-  padding: 0 20px;
 }
 .faq .questions {
   width: 85%;
@@ -470,7 +733,7 @@ html {
 .faq .questions .off {
   display: none;
 }
-.faq .questions .question {
+.faq .questions li .question {
   width: 100%;
   height: 70px;
   border-bottom: 1px solid hsl(240deg, 5%, 91%);
@@ -478,7 +741,7 @@ html {
   justify-content: space-between;
   align-items: center;
 }
-.faq .questions .question p {
+.faq .questions li .question p {
   font-size: 2.5rem;
   text-align: center;
   font-family: "Rubik", sans-serif;
@@ -487,7 +750,7 @@ html {
   font-weight: 400;
   text-align: center;
 }
-.faq .questions .question img {
+.faq .questions li .question img {
   width: 19px;
   height: 13px;
   cursor: pointer;
@@ -525,6 +788,7 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 0;
 }
 .form .titles p {
   font-size: 2.5rem;

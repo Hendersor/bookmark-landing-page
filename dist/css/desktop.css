@@ -27,6 +27,9 @@ html {
   font-weight: 300;
   cursor: pointer;
 }
+.navContainer .desktopMenu ul li:hover {
+  color: hsl(0deg, 94%, 66%);
+}
 .navContainer .desktopMenu ul button {
   border: none;
   width: 135px;
@@ -121,6 +124,7 @@ html {
 }
 .features .mainFeatureContainer {
   display: flex;
+  flex-direction: row;
   width: 100%;
 }
 .features .mainFeatureContainer .featureImage {
