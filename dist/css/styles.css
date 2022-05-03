@@ -21,6 +21,9 @@ html {
 .navContainer .iconMenuContainer {
   display: none;
 }
+.navContainer .logoContainer img {
+  width: 200px;
+}
 .navContainer .desktopMenu {
   display: flex;
   width: 100%;
@@ -37,6 +40,9 @@ html {
   font-weight: 300;
   cursor: pointer;
 }
+.navContainer .desktopMenu ul li {
+  font-size: 1.8rem;
+}
 .navContainer .desktopMenu ul li:hover {
   color: hsl(0deg, 94%, 66%);
 }
@@ -50,6 +56,11 @@ html {
   color: white;
   font-weight: bold;
   cursor: pointer;
+}
+.navContainer .desktopMenu ul button:hover {
+  background-color: transparent;
+  border: 2px solid hsl(0deg, 94%, 66%);
+  color: hsl(0deg, 94%, 66%);
 }
 .navContainer .desktopMenu .iconMenuContainer img {
   width: 200px;
@@ -88,6 +99,16 @@ html {
   height: 60px;
   align-content: flex-start;
   font-size: 1.8rem;
+}
+.mainContainer .informationContainer .buttonsContainer .specialButton:hover {
+  background-color: transparent;
+  border: 2px solid hsl(231deg, 69%, 60%);
+  color: hsl(231deg, 69%, 60%);
+}
+.mainContainer .informationContainer .buttonsContainer .button:hover {
+  background-color: transparent;
+  border: 2px solid hsl(229deg, 8%, 60%);
+  color: hsl(229deg, 8%, 60%);
 }
 .mainContainer .imageContainer {
   width: 100%;
@@ -129,36 +150,51 @@ html {
   align-items: center;
   height: 100px;
 }
+.features .featuresInfoContainer .featuresList .featureContainer h2:hover {
+  color: hsl(0deg, 94%, 66%);
+}
 .features .featuresInfoContainer .featuresList .num1 {
   border-top: none;
 }
-.features .mainFeatureContainer {
+.features .displayFeature {
+  width: 100%;
+  height: 50%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.features .displayFeature .mainFeatureContainer {
+  display: flex;
+  flex-direction: row;
   width: 100%;
 }
-.features .mainFeatureContainer .featureImage {
+.features .displayFeature .mainFeatureContainer .featureImage {
   width: 50%;
   height: 100%;
 }
-.features .mainFeatureContainer .featureImage .figure {
+.features .displayFeature .mainFeatureContainer .featureImage .figure {
   height: 300px;
   width: 400px;
 }
-.features .mainFeatureContainer .featureImage img {
+.features .displayFeature .mainFeatureContainer .featureImage img {
   width: 400px;
   height: 300px;
 }
-.features .mainFeatureContainer .featureInfo {
+.features .displayFeature .mainFeatureContainer .featureInfo {
   width: 50%;
   height: 100%;
 }
-.features .mainFeatureContainer .featureInfo h1 {
+.features .displayFeature .mainFeatureContainer .featureInfo h1 {
   font-size: 3.5rem;
   text-align: left;
 }
-.features .mainFeatureContainer .featureInfo p {
+.features .displayFeature .mainFeatureContainer .featureInfo p {
   font-size: 2rem;
   text-align: left;
+}
+.features .displayFeature .off {
+  display: none;
 }
 
 .extension {
@@ -197,6 +233,11 @@ html {
 .extension .downloadExtensions .chrome {
   width: 290px;
 }
+.extension .downloadExtensions .chrome button:hover {
+  background-color: transparent;
+  color: hsl(231deg, 69%, 60%);
+  border: 2px solid hsl(231deg, 69%, 60%);
+}
 
 .faq .information {
   padding: 0 200px;
@@ -213,6 +254,13 @@ html {
 }
 .faq .questions li .question p {
   font-size: 2.1rem;
+  cursor: pointer;
+}
+.faq .questions li .question p:hover {
+  color: hsl(0deg, 94%, 66%);
+}
+.faq .questions li .question img {
+  cursor: pointer;
 }
 .faq .questions li .answer {
   font-size: 1.6rem;
@@ -241,6 +289,12 @@ html {
 }
 .form .input button {
   width: 120px;
+  cursor: pointer;
+}
+.form .input button:hover {
+  background-color: white;
+  color: hsl(0deg, 94%, 66%);
+  border: 2px solid hsl(0deg, 94%, 66%);
 }
 
 footer {
@@ -256,6 +310,9 @@ footer .footerContent {
 footer .footerContent p {
   cursor: pointer;
   font-weight: 300;
+}
+footer .footerContent p:hover {
+  color: hsl(0deg, 94%, 66%);
 }
 footer .socialMedia {
   display: flex;
@@ -528,6 +585,35 @@ footer .socialMedia {
   align-items: center;
   justify-content: space-evenly;
 }
+.features .displayFeature .animation {
+  transition: transform 300ms;
+  -webkit-animation-name: enter;
+          animation-name: enter;
+  -webkit-animation-duration: 700ms;
+          animation-duration: 700ms;
+}
+@-webkit-keyframes enter {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes enter {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .features .displayFeature .mainFeatureContainer {
   display: flex;
   flex-direction: column;
@@ -584,7 +670,7 @@ footer .socialMedia {
   line-height: 25px;
   padding: 0 20px;
 }
-.features .displayFeature .off {
+.features .off {
   display: none;
 }
 
@@ -726,17 +812,56 @@ footer .socialMedia {
   margin: 0 auto;
   list-style: none;
 }
+.faq .questions .offText {
+  display: none;
+}
+.faq .questions .showText .offText {
+  display: block;
+  transition: translate 300ms;
+  -webkit-animation-name: show;
+          animation-name: show;
+  -webkit-animation-duration: 200ms;
+          animation-duration: 200ms;
+}
 .faq .questions .answer {
   font-size: 1.5rem;
   font-family: "Rubik", sans-serif;
 }
-.faq .questions .off {
-  display: none;
+.faq .questions .animation {
+  transition: translate 300ms;
+  -webkit-animation-name: show;
+          animation-name: show;
+  -webkit-animation-duration: 200ms;
+          animation-duration: 200ms;
+}
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.faq .questions li {
+  border-bottom: 1px solid hsl(240deg, 5%, 91%);
 }
 .faq .questions li .question {
   width: 100%;
   height: 70px;
-  border-bottom: 1px solid hsl(240deg, 5%, 91%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -754,6 +879,14 @@ footer .socialMedia {
   width: 19px;
   height: 13px;
   cursor: pointer;
+}
+.faq .questions li .question .rotate {
+  transform: rotate(180deg);
+  transition: transform 300ms;
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-name: 500ms;
+          animation-name: 500ms;
 }
 .faq button {
   height: 50px;

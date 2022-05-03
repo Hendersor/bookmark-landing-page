@@ -4,7 +4,9 @@ const closeIcon = document.getElementById("closeMenu");
 const featuresContainer = document.getElementById("featuresContainer");
 const allFeatures = document.querySelectorAll(".mainFeatureContainer");
 const allQuestions = document.getElementById("allQuestions");
+const questions = document.querySelectorAll(".questionContainer");
 const answer = document.querySelectorAll(".answer");
+
 function noScroll() {
   window.scrollTo(0.0);
 }
@@ -40,19 +42,30 @@ const deployFeature = (e) => {
     });
     const element = document.getElementById(id);
     element.classList.remove("off");
+    element.classList.add("animation");
   }
 };
 
 featuresContainer.addEventListener("click", deployFeature);
+const allArrows = document.querySelectorAll(".question img");
 
-const deployAnswer = (e) => {
-  const id = e.target.dataset.id;
-  if (id) {
-    answer.forEach((ans) => {
-      ans.classList.add("off");
+questions.forEach((question) => {
+  const btn = question.querySelector(".question img");
+
+  btn.addEventListener("click", (e) => {
+    questions.forEach((rmv) => {
+      if (rmv != question) {
+        rmv.classList.remove("showText");
+      }
     });
-    const deploy = document.getElementById(id);
-    deploy.classList.remove("off");
-  }
-};
-allQuestions.addEventListener("click", deployAnswer);
+
+    allArrows.forEach((icn) => {
+      if (icn != btn) {
+        icn.classList.remove("rotate");
+      }
+    });
+
+    e.target.classList.toggle("rotate");
+    question.classList.toggle("showText");
+  });
+});
