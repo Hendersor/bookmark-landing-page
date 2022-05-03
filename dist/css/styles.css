@@ -620,12 +620,12 @@ footer .socialMedia {
   width: 100%;
   height: 100%;
 }
-.features .displayFeature .featureImage {
+.features .displayFeature .mainFeatureContainer .featureImage {
   width: 100%;
   height: 60%;
   position: relative;
 }
-.features .displayFeature .featureImage .figure {
+.features .displayFeature .mainFeatureContainer .featureImage .figure {
   height: 300px;
   width: 300px;
   position: absolute;
@@ -637,7 +637,7 @@ footer .socialMedia {
   border-bottom-right-radius: 50%;
   height: 200px;
 }
-.features .displayFeature .featureImage img {
+.features .displayFeature .mainFeatureContainer .featureImage img {
   width: 325px;
   height: 225px;
   position: absolute;
@@ -646,7 +646,7 @@ footer .socialMedia {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.features .displayFeature .featureInfo {
+.features .displayFeature .mainFeatureContainer .featureInfo {
   height: 40%;
   width: 100%;
   display: flex;
@@ -654,14 +654,14 @@ footer .socialMedia {
   align-items: center;
   flex-direction: column;
 }
-.features .displayFeature .featureInfo h1 {
+.features .displayFeature .mainFeatureContainer .featureInfo h1 {
   font-size: 2.5rem;
   text-align: center;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   margin-bottom: 20px;
 }
-.features .displayFeature .featureInfo p {
+.features .displayFeature .mainFeatureContainer .featureInfo p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: hsl(229deg, 8%, 60%);
@@ -670,7 +670,7 @@ footer .socialMedia {
   line-height: 25px;
   padding: 0 20px;
 }
-.features .off {
+.features .displayFeature .off {
   display: none;
 }
 
